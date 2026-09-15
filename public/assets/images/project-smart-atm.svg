@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="atmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141010"/>
+      <stop offset="50%" stop-color="#1A1414"/>
+      <stop offset="100%" stop-color="#100D0D"/>
+    </linearGradient>
+    <linearGradient id="atmCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8C3038"/>
+      <stop offset="100%" stop-color="#4A151B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="600" fill="url(#atmBg)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g stroke="#F1E4D4" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="100" x2="1000" y2="100"/>
+    <line x1="0" y1="200" x2="1000" y2="200"/>
+    <line x1="0" y1="300" x2="1000" y2="300"/>
+    <line x1="0" y1="400" x2="1000" y2="400"/>
+    <line x1="0" y1="500" x2="1000" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="800" y1="0" x2="800" y2="600"/>
+  </g>
+
+  <!-- ATM Machine Outer Frame -->
+  <rect x="50" y="40" width="900" height="520" rx="8" fill="#171313" stroke="#F1E4D4" stroke-opacity="0.15" stroke-width="1.5"/>
+  
+  <!-- Window Header Bar -->
+  <rect x="50" y="40" width="900" height="42" rx="8" fill="#211A1A"/>
+  <circle cx="80" cy="61" r="5" fill="#8C3038"/>
+  <circle cx="100" cy="61" r="5" fill="#D7C4B2" fill-opacity="0.4"/>
+  <circle cx="120" cy="61" r="5" fill="#F1E4D4" fill-opacity="0.2"/>
+  <text x="150" y="66" font-family="monospace" font-size="12" fill="#D7C4B2" letter-spacing="1">SMART ATM CLIENT · ACID LEDGER ENGINE v2.4</text>
+  <rect x="790" y="50" width="130" height="22" rx="3" fill="#8C3038" fill-opacity="0.25" stroke="#8C3038" stroke-width="1"/>
+  <text x="855" y="65" font-family="monospace" font-size="10" fill="#F1E4D4" font-weight="bold" text-anchor="middle">STATUS: ACTIVE</text>
+
+  <!-- Left Panel: ATM Screen Mockup -->
+  <rect x="80" y="110" width="520" height="380" rx="6" fill="#100D0D" stroke="#F1E4D4" stroke-opacity="0.1"/>
+  
+  <!-- Terminal Screen Header -->
+  <rect x="80" y="110" width="520" height="50" fill="#1A1414"/>
+  <text x="105" y="140" font-family="serif" font-size="16" fill="#F1E4D4" font-weight="bold" letter-spacing="1">NATIONAL APEX BANK</text>
+  <text x="560" y="140" font-family="monospace" font-size="11" fill="#8E7D70" text-anchor="end">TERMINAL #PTU-019</text>
+
+  <!-- User Account Card Strip -->
+  <rect x="105" y="180" width="470" height="75" rx="4" fill="#171313" stroke="#8C3038" stroke-width="1"/>
+  <text x="125" y="208" font-family="monospace" font-size="10" fill="#8E7D70" letter-spacing="1">AVAILABLE BALANCE</text>
+  <text x="125" y="240" font-family="serif" font-size="26" fill="#F1E4D4" font-weight="bold">₹ 42,500.00</text>
+  <text x="555" y="210" font-family="monospace" font-size="10" fill="#8C3038" font-weight="bold" text-anchor="end">CARD AUTHENTICATED</text>
+  <text x="555" y="235" font-family="monospace" font-size="11" fill="#D7C4B2" text-anchor="end">A/C: •••• 8842</text>
+
+  <!-- ATM Operations Grid -->
+  <rect x="105" y="275" width="225" height="46" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.15"/>
+  <text x="125" y="303" font-family="monospace" font-size="12" fill="#F1E4D4">1. FAST CASH [₹2,000]</text>
+  <rect x="350" y="275" width="225" height="46" rx="4" fill="#8C3038" fill-opacity="0.2" stroke="#8C3038"/>
+  <text x="370" y="303" font-family="monospace" font-size="12" fill="#F1E4D4">2. CASH WITHDRAWAL</text>
+
+  <rect x="105" y="335" width="225" height="46" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.15"/>
+  <text x="125" y="363" font-family="monospace" font-size="12" fill="#F1E4D4">3. PIN CHANGE</text>
+  <rect x="350" y="335" width="225" height="46" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.15"/>
+  <text x="370" y="363" font-family="monospace" font-size="12" fill="#F1E4D4">4. MINI STATEMENT</text>
+
+  <!-- Flask Endpoint Footer in Screen -->
+  <rect x="105" y="405" width="470" height="60" rx="4" fill="#141010" stroke="#F1E4D4" stroke-opacity="0.08"/>
+  <text x="120" y="428" font-family="monospace" font-size="10" fill="#8E7D70">FLASK REST DISPATCHER:</text>
+  <text x="120" y="448" font-family="monospace" font-size="11" fill="#D7C4B2">POST /api/atm/transaction/verify_pin &gt; 200 OK (18ms)</text>
+
+  <!-- Right Panel: Physical ATM Hardware & Keypad Simulation -->
+  <rect x="630" y="110" width="290" height="380" rx="6" fill="#1A1414" stroke="#F1E4D4" stroke-opacity="0.1"/>
+  
+  <!-- Card Slot -->
+  <text x="655" y="140" font-family="monospace" font-size="10" fill="#8E7D70" letter-spacing="1">CARD INSERTION SLOT</text>
+  <rect x="655" y="152" width="240" height="12" rx="3" fill="#100D0D" stroke="#8C3038" stroke-width="1.5"/>
+  <rect x="715" y="155" width="80" height="6" fill="#8C3038"/>
+  
+  <!-- Physical Numeric Pinpad -->
+  <text x="655" y="200" font-family="monospace" font-size="10" fill="#8E7D70" letter-spacing="1">ENCRYPTED PINPAD</text>
+  
+  <!-- Keys Row 1 -->
+  <rect x="655" y="215" width="65" height="38" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="687" y="239" font-family="monospace" font-size="14" fill="#F1E4D4" text-anchor="middle">1</text>
+  <rect x="735" y="215" width="65" height="38" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="767" y="239" font-family="monospace" font-size="14" fill="#F1E4D4" text-anchor="middle">2</text>
+  <rect x="815" y="215" width="65" height="38" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="847" y="239" font-family="monospace" font-size="14" fill="#F1E4D4" text-anchor="middle">3</text>
+
+  <!-- Keys Row 2 -->
+  <rect x="655" y="265" width="65" height="38" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="687" y="289" font-family="monospace" font-size="14" fill="#F1E4D4" text-anchor="middle">4</text>
+  <rect x="735" y="265" width="65" height="38" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="767" y="289" font-family="monospace" font-size="14" fill="#F1E4D4" text-anchor="middle">5</text>
+  <rect x="815" y="265" width="65" height="38" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="847" y="289" font-family="monospace" font-size="14" fill="#F1E4D4" text-anchor="middle">6</text>
+
+  <!-- Keys Row 3 -->
+  <rect x="655" y="315" width="65" height="38" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="687" y="339" font-family="monospace" font-size="14" fill="#F1E4D4" text-anchor="middle">7</text>
+  <rect x="735" y="315" width="65" height="38" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="767" y="339" font-family="monospace" font-size="14" fill="#F1E4D4" text-anchor="middle">8</text>
+  <rect x="815" y="315" width="65" height="38" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="847" y="339" font-family="monospace" font-size="14" fill="#F1E4D4" text-anchor="middle">9</text>
+
+  <!-- Keys Row 4: Cancel, 0, Enter -->
+  <rect x="655" y="365" width="65" height="38" rx="4" fill="#8C3038" fill-opacity="0.6"/>
+  <text x="687" y="388" font-family="monospace" font-size="10" fill="#F1E4D4" font-weight="bold" text-anchor="middle">CANCEL</text>
+  <rect x="735" y="365" width="65" height="38" rx="4" fill="#211A1A" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="767" y="389" font-family="monospace" font-size="14" fill="#F1E4D4" text-anchor="middle">0</text>
+  <rect x="815" y="365" width="65" height="38" rx="4" fill="#2B4C38" stroke="#52B788" stroke-width="1"/>
+  <text x="847" y="388" font-family="monospace" font-size="10" fill="#F1E4D4" font-weight="bold" text-anchor="middle">ENTER</text>
+
+  <!-- Cash Dispenser Tray -->
+  <text x="655" y="430" font-family="monospace" font-size="10" fill="#8E7D70" letter-spacing="1">CASH DISPENSER TRAY</text>
+  <rect x="655" y="442" width="240" height="28" rx="4" fill="#100D0D" stroke="#F1E4D4" stroke-opacity="0.1"/>
+  <rect x="675" y="454" width="180" height="5" fill="#8C3038" fill-opacity="0.8"/>
+
+  <!-- Footer Info Line -->
+  <text x="70" y="540" font-family="monospace" font-size="11" fill="#8E7D70">STACK: PYTHON · FLASK · SQLITE / MYSQL · TRANSACTION RECEIPTS</text>
+  <text x="930" y="540" font-family="monospace" font-size="11" fill="#D7C4B2" text-anchor="end">SABITHA SARAVANAN</text>
+</svg>

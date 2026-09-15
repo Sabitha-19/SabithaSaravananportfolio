@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cgpaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141010"/>
+      <stop offset="50%" stop-color="#181313"/>
+      <stop offset="100%" stop-color="#100D0D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="600" fill="url(#cgpaBg)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g stroke="#F1E4D4" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="100" x2="1000" y2="100"/>
+    <line x1="0" y1="200" x2="1000" y2="200"/>
+    <line x1="0" y1="300" x2="1000" y2="300"/>
+    <line x1="0" y1="400" x2="1000" y2="400"/>
+    <line x1="0" y1="500" x2="1000" y2="500"/>
+  </g>
+
+  <!-- Main Card Container -->
+  <rect x="50" y="40" width="900" height="520" rx="8" fill="#171313" stroke="#F1E4D4" stroke-opacity="0.15" stroke-width="1.5"/>
+  
+  <!-- Header Bar -->
+  <rect x="50" y="40" width="900" height="42" rx="8" fill="#211A1A"/>
+  <circle cx="80" cy="61" r="5" fill="#8C3038"/>
+  <circle cx="100" cy="61" r="5" fill="#D7C4B2" fill-opacity="0.4"/>
+  <circle cx="120" cy="61" r="5" fill="#F1E4D4" fill-opacity="0.2"/>
+  <text x="150" y="66" font-family="monospace" font-size="12" fill="#D7C4B2" letter-spacing="1">WEC CGPA CALCULATOR · PTU ACADEMIC MATRIX</text>
+  <rect x="760" y="50" width="160" height="22" rx="3" fill="#8C3038" fill-opacity="0.25" stroke="#8C3038" stroke-width="1"/>
+  <text x="840" y="65" font-family="monospace" font-size="10" fill="#F1E4D4" font-weight="bold" text-anchor="middle">CALC ENGINE: v1.8</text>
+
+  <!-- Left: Circular GPA Meter & Summary Card -->
+  <rect x="80" y="110" width="340" height="380" rx="6" fill="#1A1414" stroke="#F1E4D4" stroke-opacity="0.1"/>
+  
+  <text x="250" y="145" font-family="serif" font-size="16" fill="#F1E4D4" font-weight="bold" text-anchor="middle">SEMESTER EVALUATION</text>
+  <text x="250" y="165" font-family="monospace" font-size="10" fill="#8E7D70" text-anchor="middle">ACCREDITED PTU FORMULA</text>
+
+  <!-- Dial Circle -->
+  <circle cx="250" cy="260" r="70" fill="none" stroke="#261E1E" stroke-width="14"/>
+  <circle cx="250" cy="260" r="70" fill="none" stroke="#8C3038" stroke-width="14" stroke-dasharray="440" stroke-dashoffset="100" stroke-linecap="round"/>
+  <text x="250" y="255" font-family="serif" font-size="34" fill="#F1E4D4" font-weight="bold" text-anchor="middle">8.42</text>
+  <text x="250" y="280" font-family="monospace" font-size="10" fill="#8C3038" font-weight="bold" text-anchor="middle">SEMESTER GPA</text>
+
+  <!-- Metric Badges -->
+  <rect x="105" y="355" width="135" height="50" rx="4" fill="#100D0D" stroke="#F1E4D4" stroke-opacity="0.08"/>
+  <text x="172" y="375" font-family="monospace" font-size="9" fill="#8E7D70" text-anchor="middle">TOTAL CREDITS</text>
+  <text x="172" y="396" font-family="monospace" font-size="16" fill="#F1E4D4" font-weight="bold" text-anchor="middle">24.0</text>
+
+  <rect x="255" y="355" width="140" height="50" rx="4" fill="#100D0D" stroke="#8C3038" stroke-width="1"/>
+  <text x="325" y="375" font-family="monospace" font-size="9" fill="#8C3038" text-anchor="middle">CUMULATIVE CGPA</text>
+  <text x="325" y="396" font-family="monospace" font-size="16" fill="#F1E4D4" font-weight="bold" text-anchor="middle">7.94 / 10</text>
+
+  <rect x="105" y="420" width="290" height="48" rx="4" fill="#211A1A"/>
+  <text x="250" y="442" font-family="monospace" font-size="10" fill="#D7C4B2" text-anchor="middle">STATUS: FIRST CLASS WITH DISTINCTION</text>
+  <text x="250" y="458" font-family="monospace" font-size="9" fill="#8E7D70" text-anchor="middle">PTU B.TECH ISE REGULATION 2023</text>
+
+  <!-- Right: Subject-wise Grade Ledger Table -->
+  <rect x="445" y="110" width="475" height="380" rx="6" fill="#100D0D" stroke="#F1E4D4" stroke-opacity="0.1"/>
+  <rect x="445" y="110" width="475" height="42" fill="#1A1414"/>
+  <text x="470" y="136" font-family="monospace" font-size="11" fill="#8E7D70">COURSE CODE &amp; TITLE</text>
+  <text x="730" y="136" font-family="monospace" font-size="11" fill="#8E7D70">CREDIT</text>
+  <text x="830" y="136" font-family="monospace" font-size="11" fill="#8E7D70">GRADE</text>
+  <text x="895" y="136" font-family="monospace" font-size="11" fill="#8E7D70">PTS</text>
+
+  <!-- Row 1 -->
+  <rect x="460" y="165" width="445" height="36" rx="3" fill="#171313"/>
+  <text x="475" y="188" font-family="monospace" font-size="11" fill="#F1E4D4">CS301 · DATA STRUCTURES &amp; ALGORITHMS</text>
+  <text x="745" y="188" font-family="monospace" font-size="11" fill="#D7C4B2">4.0</text>
+  <text x="835" y="188" font-family="monospace" font-size="11" fill="#8C3038" font-weight="bold">O</text>
+  <text x="900" y="188" font-family="monospace" font-size="11" fill="#F1E4D4">40</text>
+
+  <!-- Row 2 -->
+  <rect x="460" y="210" width="445" height="36" rx="3" fill="#141010"/>
+  <text x="475" y="233" font-family="monospace" font-size="11" fill="#F1E4D4">IT304 · DATABASE MANAGEMENT SYSTEMS</text>
+  <text x="745" y="233" font-family="monospace" font-size="11" fill="#D7C4B2">4.0</text>
+  <text x="835" y="233" font-family="monospace" font-size="11" fill="#8C3038" font-weight="bold">A+</text>
+  <text x="900" y="233" font-family="monospace" font-size="11" fill="#F1E4D4">36</text>
+
+  <!-- Row 3 -->
+  <rect x="460" y="255" width="445" height="36" rx="3" fill="#171313"/>
+  <text x="475" y="278" font-family="monospace" font-size="11" fill="#F1E4D4">CS306 · WEB TECHNOLOGY FRAMEWORKS</text>
+  <text x="745" y="278" font-family="monospace" font-size="11" fill="#D7C4B2">3.0</text>
+  <text x="835" y="278" font-family="monospace" font-size="11" fill="#8C3038" font-weight="bold">O</text>
+  <text x="900" y="278" font-family="monospace" font-size="11" fill="#F1E4D4">30</text>
+
+  <!-- Row 4 -->
+  <rect x="460" y="300" width="445" height="36" rx="3" fill="#141010"/>
+  <text x="475" y="323" font-family="monospace" font-size="11" fill="#F1E4D4">MA302 · DISCRETE MATHEMATICAL LOGIC</text>
+  <text x="745" y="323" font-family="monospace" font-size="11" fill="#D7C4B2">4.0</text>
+  <text x="835" y="323" font-family="monospace" font-size="11" fill="#D7C4B2">A</text>
+  <text x="900" y="323" font-family="monospace" font-size="11" fill="#F1E4D4">32</text>
+
+  <!-- Row 5 -->
+  <rect x="460" y="345" width="445" height="36" rx="3" fill="#171313"/>
+  <text x="475" y="368" font-family="monospace" font-size="11" fill="#F1E4D4">IT308 · OPERATING SYSTEMS KERNEL</text>
+  <text x="745" y="368" font-family="monospace" font-size="11" fill="#D7C4B2">3.0</text>
+  <text x="835" y="368" font-family="monospace" font-size="11" fill="#D7C4B2">A</text>
+  <text x="900" y="368" font-family="monospace" font-size="11" fill="#F1E4D4">24</text>
+
+  <!-- Interactive Dynamic Add Subject Strip -->
+  <rect x="460" y="405" width="445" height="60" rx="4" fill="#171313" stroke="#8C3038" stroke-dasharray="4 3"/>
+  <text x="682" y="432" font-family="monospace" font-size="11" fill="#8C3038" text-anchor="middle">+ DYNAMIC ROW INJECTION · REALTIME JS COMPUTATION</text>
+  <text x="682" y="450" font-family="monospace" font-size="10" fill="#8E7D70" text-anchor="middle">Input sanitization &amp; PTU credit boundary checks</text>
+
+  <text x="70" y="540" font-family="monospace" font-size="11" fill="#8E7D70">TECHNOLOGY: HTML5 · CSS3 · JAVASCRIPT (ES6+) · DOM ENGINE</text>
+  <text x="930" y="540" font-family="monospace" font-size="11" fill="#D7C4B2" text-anchor="end">LIVE ON GITHUB PAGES</text>
+</svg>

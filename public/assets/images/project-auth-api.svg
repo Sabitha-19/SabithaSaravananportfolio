@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="authBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141010"/>
+      <stop offset="50%" stop-color="#1A1414"/>
+      <stop offset="100%" stop-color="#100D0D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="600" fill="url(#authBg)"/>
+  
+  <!-- Outer Card Frame -->
+  <rect x="50" y="40" width="900" height="520" rx="8" fill="#171313" stroke="#F1E4D4" stroke-opacity="0.15" stroke-width="1.5"/>
+  
+  <!-- Header Bar -->
+  <rect x="50" y="40" width="900" height="42" rx="8" fill="#211A1A"/>
+  <circle cx="80" cy="61" r="5" fill="#8C3038"/>
+  <circle cx="100" cy="61" r="5" fill="#D7C4B2" fill-opacity="0.4"/>
+  <circle cx="120" cy="61" r="5" fill="#F1E4D4" fill-opacity="0.2"/>
+  <text x="150" y="66" font-family="monospace" font-size="12" fill="#D7C4B2" letter-spacing="1">USER AUTH &amp; MANAGEMENT REST API · SECURITY CONSOLE</text>
+  <rect x="760" y="50" width="160" height="22" rx="3" fill="#8C3038" fill-opacity="0.25" stroke="#8C3038" stroke-width="1"/>
+  <text x="840" y="65" font-family="monospace" font-size="10" fill="#F1E4D4" font-weight="bold" text-anchor="middle">POSTMAN TESTED: 100%</text>
+
+  <!-- Top Endpoint Request Bar -->
+  <rect x="80" y="100" width="840" height="50" rx="6" fill="#1A1414" stroke="#8C3038" stroke-width="1"/>
+  <rect x="95" y="112" width="60" height="26" rx="3" fill="#8C3038"/>
+  <text x="125" y="129" font-family="monospace" font-size="11" fill="#F1E4D4" font-weight="bold" text-anchor="middle">POST</text>
+  <text x="170" y="130" font-family="monospace" font-size="13" fill="#F1E4D4">/api/v1/auth/authenticate_user</text>
+  <rect x="680" y="112" width="105" height="26" rx="3" fill="#100D0D" stroke="#52B788" stroke-width="1"/>
+  <text x="732" y="129" font-family="monospace" font-size="10" fill="#52B788" font-weight="bold" text-anchor="middle">STATUS: 200 OK</text>
+  <rect x="800" y="112" width="105" height="26" rx="3" fill="#100D0D" stroke="#F1E4D4" stroke-opacity="0.2"/>
+  <text x="852" y="129" font-family="monospace" font-size="10" fill="#D7C4B2" text-anchor="middle">LATENCY: 24ms</text>
+
+  <!-- Left: Headers, Cryptographic Hash & Token Inspect -->
+  <rect x="80" y="165" width="460" height="325" rx="6" fill="#100D0D" stroke="#F1E4D4" stroke-opacity="0.08"/>
+  <rect x="80" y="165" width="460" height="34" fill="#181313"/>
+  <text x="100" y="187" font-family="monospace" font-size="11" fill="#8E7D70">CRYPTOGRAPHIC PAYLOAD &amp; JWT TOKEN</text>
+
+  <g font-family="monospace" font-size="11">
+    <text x="100" y="220" fill="#8E7D70">REQUEST HEADERS:</text>
+    <rect x="100" y="230" width="420" height="30" rx="3" fill="#171313"/>
+    <text x="110" y="250" fill="#D7C4B2">Content-Type: application/json</text>
+    <rect x="100" y="265" width="420" height="30" rx="3" fill="#171313"/>
+    <text x="110" y="285" fill="#8C3038">Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6...</text>
+
+    <text x="100" y="325" fill="#8E7D70">BCRYPT SALT &amp; CIPHERTEXT STORAGE:</text>
+    <rect x="100" y="335" width="420" height="42" rx="3" fill="#211A1A" stroke="#8C3038" stroke-width="0.8"/>
+    <text x="110" y="354" fill="#F1E4D4">$2b$12$e8Yt3L9P2...m8Kp4Q0R9sX2tZ</text>
+    <text x="110" y="370" fill="#8E7D70">Cost factor: 12 rounds · Salt auto-generated</text>
+
+    <text x="100" y="405" fill="#8E7D70">SECURITY PROTOCOL VERIFICATION:</text>
+    <rect x="100" y="415" width="420" height="60" rx="3" fill="#171313"/>
+    <text x="110" y="435" fill="#52B788">✓ SQL Injection prevention via prepared PDO statements</text>
+    <text x="110" y="452" fill="#52B788">✓ Input validation &amp; sanitized request parameters</text>
+    <text x="110" y="468" fill="#52B788">✓ Stateful session invalidation on token revocation</text>
+  </g>
+
+  <!-- Right: Response JSON & Role Table -->
+  <rect x="560" y="165" width="360" height="325" rx="6" fill="#100D0D" stroke="#F1E4D4" stroke-opacity="0.1"/>
+  <rect x="560" y="165" width="360" height="34" fill="#181313"/>
+  <text x="580" y="187" font-family="monospace" font-size="11" fill="#8E7D70">STRUCTURED RESPONSE (JSON)</text>
+
+  <g font-family="monospace" font-size="10">
+    <text x="580" y="220" fill="#8E7D70">{</text>
+    <text x="600" y="238" fill="#8C3038">  "status": <tspan fill="#52B788">"success"</tspan>,</text>
+    <text x="600" y="256" fill="#8C3038">  "code": <tspan fill="#F1E4D4">200</tspan>,</text>
+    <text x="600" y="274" fill="#8C3038">  "message": <tspan fill="#D7C4B2">"Authentication successful"</tspan>,</text>
+    <text x="600" y="292" fill="#8C3038">  "user": {</text>
+    <text x="620" y="310" fill="#8E7D70">    "user_id": 1942,</text>
+    <text x="620" y="328" fill="#8E7D70">    "email": "user@portal.edu",</text>
+    <text x="620" y="346" fill="#8E7D70">    "role": "STUDENT_ADMIN",</text>
+    <text x="620" y="364" fill="#8E7D70">    "verified": true</text>
+    <text x="600" y="382" fill="#8C3038">  },</text>
+    <text x="600" y="400" fill="#8C3038">  "session_expiry": <tspan fill="#F1E4D4">86400</tspan>,</text>
+    <text x="600" y="418" fill="#8C3038">  "refresh_allowed": <tspan fill="#52B788">true</tspan></text>
+    <text x="580" y="436" fill="#8E7D70">}</text>
+  </g>
+
+  <rect x="580" y="450" width="320" height="30" rx="3" fill="#211A1A"/>
+  <text x="740" y="470" font-family="monospace" font-size="10" fill="#D7C4B2" text-anchor="middle">ROLE-BASED ACCESS CONTROL (RBAC) ACTIVE</text>
+
+  <text x="70" y="540" font-family="monospace" font-size="11" fill="#8E7D70">BACKEND: PHP · MYSQL · REST API · JWT · BCRYPT · POSTMAN</text>
+  <text x="930" y="540" font-family="monospace" font-size="11" fill="#D7C4B2" text-anchor="end">SABITHA SARAVANAN</text>
+</svg>

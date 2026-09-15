@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="snipBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141010"/>
+      <stop offset="50%" stop-color="#1A1414"/>
+      <stop offset="100%" stop-color="#100D0D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="600" fill="url(#snipBg)"/>
+  
+  <!-- Outer Card Frame -->
+  <rect x="50" y="40" width="900" height="520" rx="8" fill="#171313" stroke="#F1E4D4" stroke-opacity="0.15" stroke-width="1.5"/>
+  
+  <!-- Header Bar -->
+  <rect x="50" y="40" width="900" height="42" rx="8" fill="#211A1A"/>
+  <circle cx="80" cy="61" r="5" fill="#8C3038"/>
+  <circle cx="100" cy="61" r="5" fill="#D7C4B2" fill-opacity="0.4"/>
+  <circle cx="120" cy="61" r="5" fill="#F1E4D4" fill-opacity="0.2"/>
+  <text x="150" y="66" font-family="monospace" font-size="12" fill="#D7C4B2" letter-spacing="1">SOURCE CODE SNIPPET FINDER · REPOSITORY EXPLORER</text>
+  <rect x="780" y="50" width="140" height="22" rx="3" fill="#8C3038" fill-opacity="0.25" stroke="#8C3038" stroke-width="1"/>
+  <text x="850" y="65" font-family="monospace" font-size="10" fill="#F1E4D4" font-weight="bold" text-anchor="middle">RENDER: ONLINE</text>
+
+  <!-- Search Filter Bar -->
+  <rect x="80" y="100" width="840" height="50" rx="6" fill="#1A1414" stroke="#8C3038" stroke-width="1"/>
+  <text x="105" y="131" font-family="monospace" font-size="14" fill="#8C3038" font-weight="bold">&gt;</text>
+  <text x="125" y="131" font-family="monospace" font-size="13" fill="#F1E4D4">query: def binary_tree_inorder_traversal(node):</text>
+  
+  <!-- Language Tags inside search bar -->
+  <rect x="620" y="112" width="70" height="26" rx="3" fill="#8C3038" fill-opacity="0.4"/>
+  <text x="655" y="129" font-family="monospace" font-size="10" fill="#F1E4D4" text-anchor="middle">PYTHON</text>
+  <rect x="700" y="112" width="55" height="26" rx="3" fill="#211A1A"/>
+  <text x="727" y="129" font-family="monospace" font-size="10" fill="#8E7D70" text-anchor="middle">C++</text>
+  <rect x="765" y="112" width="55" height="26" rx="3" fill="#211A1A"/>
+  <text x="792" y="129" font-family="monospace" font-size="10" fill="#8E7D70" text-anchor="middle">SQL</text>
+  <rect x="830" y="112" width="80" height="26" rx="3" fill="#211A1A"/>
+  <text x="870" y="129" font-family="monospace" font-size="10" fill="#8E7D70" text-anchor="middle">JAVASCRIPT</text>
+
+  <!-- Left: Filter Directory Tree -->
+  <rect x="80" y="165" width="260" height="325" rx="6" fill="#100D0D" stroke="#F1E4D4" stroke-opacity="0.08"/>
+  <rect x="80" y="165" width="260" height="36" fill="#181313"/>
+  <text x="100" y="188" font-family="monospace" font-size="11" fill="#8E7D70">CATEGORIES (142 SNIPPETS)</text>
+
+  <g font-family="monospace" font-size="11">
+    <rect x="90" y="210" width="240" height="30" rx="3" fill="#8C3038" fill-opacity="0.25" stroke="#8C3038" stroke-width="0.8"/>
+    <text x="105" y="230" fill="#F1E4D4">▾ Data Structures (42)</text>
+    
+    <text x="120" y="260" fill="#8C3038">▸ Binary Search Tree</text>
+    <text x="120" y="285" fill="#D7C4B2">▸ Linked List Operations</text>
+    <text x="120" y="310" fill="#8E7D70">▸ Min-Heap Priority Queue</text>
+    <text x="120" y="335" fill="#8E7D70">▸ Graph Traversal (DFS/BFS)</text>
+    
+    <text x="105" y="375" fill="#D7C4B2">▸ Algorithms &amp; Sort (38)</text>
+    <text x="105" y="405" fill="#8E7D70">▸ Database ORM Helpers (24)</text>
+    <text x="105" y="435" fill="#8E7D70">▸ Cryptographic Hashing (18)</text>
+    <text x="105" y="465" fill="#8E7D70">▸ REST API Middleware (20)</text>
+  </g>
+
+  <!-- Right: Code Editor Preview Panel -->
+  <rect x="360" y="165" width="560" height="325" rx="6" fill="#100D0D" stroke="#F1E4D4" stroke-opacity="0.1"/>
+  
+  <!-- Code Tab Header -->
+  <rect x="360" y="165" width="560" height="36" fill="#181313"/>
+  <rect x="375" y="170" width="210" height="31" rx="3" fill="#100D0D" stroke="#8C3038" stroke-width="1"/>
+  <text x="390" y="190" font-family="monospace" font-size="11" fill="#F1E4D4">binary_tree.py [Python 3]</text>
+  
+  <!-- Copy Snippet Button -->
+  <rect x="800" y="172" width="105" height="24" rx="3" fill="#8C3038" fill-opacity="0.3" stroke="#8C3038" stroke-width="1"/>
+  <text x="852" y="188" font-family="monospace" font-size="10" fill="#F1E4D4" text-anchor="middle">COPY SNIPPET ↗</text>
+
+  <!-- Code Syntax Block -->
+  <g font-family="monospace" font-size="11">
+    <!-- Line numbers -->
+    <text x="380" y="225" fill="#5A4E45">01</text>
+    <text x="380" y="248" fill="#5A4E45">02</text>
+    <text x="380" y="271" fill="#5A4E45">03</text>
+    <text x="380" y="294" fill="#5A4E45">04</text>
+    <text x="380" y="317" fill="#5A4E45">05</text>
+    <text x="380" y="340" fill="#5A4E45">06</text>
+    <text x="380" y="363" fill="#5A4E45">07</text>
+    <text x="380" y="386" fill="#5A4E45">08</text>
+    <text x="380" y="409" fill="#5A4E45">09</text>
+    <text x="380" y="432" fill="#5A4E45">10</text>
+    <text x="380" y="455" fill="#5A4E45">11</text>
+
+    <!-- Code lines -->
+    <text x="410" y="225" fill="#8C3038">class</text>
+    <text x="450" y="225" fill="#F1E4D4"> TreeNode:</text>
+    
+    <text x="430" y="248" fill="#8C3038">def</text>
+    <text x="455" y="248" fill="#D7C4B2"> __init__(self, val=0, left=None, right=None):</text>
+    
+    <text x="455" y="271" fill="#8E7D70">self.val = val; self.left = left; self.right = right</text>
+    
+    <text x="410" y="317" fill="#8C3038">def</text>
+    <text x="435" y="317" fill="#F1E4D4"> inorder_traversal(root: Optional[TreeNode]) -&gt; List[int]:</text>
+    
+    <text x="430" y="340" fill="#D7C4B2">    result, stack = [], []</text>
+    <text x="430" y="363" fill="#D7C4B2">    curr = root</text>
+    <text x="430" y="386" fill="#8C3038">    while</text>
+    <text x="470" y="386" fill="#D7C4B2"> curr or stack:</text>
+    <text x="455" y="409" fill="#D7C4B2">        while curr: stack.append(curr); curr = curr.left</text>
+    <text x="455" y="432" fill="#D7C4B2">        curr = stack.pop(); result.append(curr.val)</text>
+    <text x="455" y="455" fill="#D7C4B2">        curr = curr.right</text>
+    <text x="430" y="478" fill="#8C3038">    return</text>
+    <text x="480" y="478" fill="#D7C4B2"> result</text>
+  </g>
+
+  <text x="70" y="540" font-family="monospace" font-size="11" fill="#8E7D70">ARCHITECTURE: PYTHON · FLASK · REUSABLE REPO · RENDER HOSTED</text>
+  <text x="930" y="540" font-family="monospace" font-size="11" fill="#D7C4B2" text-anchor="end">SABITHA SARAVANAN</text>
+</svg>

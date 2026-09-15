@@ -1,0 +1,298 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-primary: #100D0D;
+    --color-bg-surface: #171313;
+    --color-bg-elevated: #211A1A;
+    --color-text-primary: #F1E4D4;
+    --color-text-secondary: #D7C4B2;
+    --color-text-muted: #8E7D70;
+    --color-accent-burgundy: #8C3038;
+    --color-accent-wine: #5E2027;
+    --color-accent-hover: #A83A43;
+    --color-border-subtle: rgba(241, 228, 212, 0.08);
+    --color-border-medium: rgba(241, 228, 212, 0.16);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #100D0D;
+    color: #F1E4D4;
+    overflow-x: hidden;
+  }
+
+  /* Editorial Luxury Scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #100D0D;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #261E1E;
+    border-radius: 2px;
+    border: 1px solid rgba(241, 228, 212, 0.05);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8C3038;
+  }
+}
+
+/* Typography Hierarchy: Editorial Serif + Modern Sans + Technical Monospace */
+.font-serif-editorial {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-mono-tech {
+  font-family: 'IBM Plex Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Outline Text Effect (Magazine Headline Style) */
+.text-stroke-cream {
+  -webkit-text-stroke: 1.2px #F1E4D4;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.text-stroke-cream:hover {
+  color: rgba(241, 228, 212, 0.18);
+}
+
+.text-stroke-wine {
+  -webkit-text-stroke: 1.2px #8C3038;
+  color: transparent;
+}
+
+/* Editorial Fine Lines & Borders */
+.border-editorial-subtle {
+  border-color: rgba(241, 228, 212, 0.14);
+}
+
+.border-editorial-medium {
+  border-color: rgba(241, 228, 212, 0.2);
+}
+
+.border-editorial-burgundy {
+  border-color: rgba(140, 48, 56, 0.5);
+}
+
+/* Custom Cursor (Desktop Only) */
+@media (pointer: fine) and (hover: hover) {
+  .custom-cursor-dot {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: #F1E4D4;
+    border-radius: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s cubic-bezier(0.22, 1, 0.36, 1), height 0.2s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+  }
+
+  .custom-cursor-follower {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(241, 228, 212, 0.4);
+    border-radius: 50%;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.25s cubic-bezier(0.22, 1, 0.36, 1), height 0.25s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.25s ease, background-color 0.25s ease;
+  }
+
+  .custom-cursor-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #F1E4D4;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    user-select: none;
+  }
+
+  .custom-cursor-expanded .custom-cursor-dot {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  .custom-cursor-expanded .custom-cursor-follower {
+    width: 54px;
+    height: 54px;
+    border-color: #8C3038;
+    background-color: rgba(140, 48, 56, 0.18);
+    backdrop-filter: blur(1px);
+  }
+
+  .custom-cursor-expanded .custom-cursor-text {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .custom-cursor-dot, .custom-cursor-follower {
+    display: none !important;
+  }
+}
+
+/* Background Grain & Atmosphere */
+.bg-editorial-grain {
+  background-color: #100D0D;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(140, 48, 56, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 100% 100%, rgba(94, 32, 39, 0.06) 0%, transparent 50%);
+}
+
+.bg-editorial-subtle-glow {
+  background: radial-gradient(circle at 80% 20%, rgba(94, 32, 39, 0.12) 0%, transparent 50%);
+}
+
+/* Editorial Button Styles with Cubic-Bezier */
+.btn-editorial-primary {
+  background-color: #8C3038;
+  color: #F1E4D4;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.85rem 1.75rem;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(241, 228, 212, 0.15);
+  will-change: transform;
+}
+
+.btn-editorial-primary:hover {
+  background-color: #A83A43;
+  border-color: rgba(241, 228, 212, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(140, 48, 56, 0.3);
+}
+
+.btn-editorial-outline {
+  background-color: transparent;
+  color: #F1E4D4;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.85rem 1.75rem;
+  border: 1px solid rgba(241, 228, 212, 0.2);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.25s ease, border-color 0.25s ease;
+  will-change: transform;
+}
+
+.btn-editorial-outline:hover {
+  border-color: #8C3038;
+  background-color: rgba(140, 48, 56, 0.14);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-editorial-ghost {
+  background-color: rgba(255, 255, 255, 0.03);
+  color: #D7C4B2;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.65rem 1.25rem;
+  border: 1px solid rgba(241, 228, 212, 0.08);
+  transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-editorial-ghost:hover {
+  border-color: rgba(241, 228, 212, 0.25);
+  color: #F1E4D4;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Editorial Reveal Classes */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Architectural node pulse */
+@keyframes nodePulse {
+  0%, 100% {
+    border-color: rgba(140, 48, 56, 0.4);
+  }
+  50% {
+    border-color: rgba(140, 48, 56, 0.9);
+    box-shadow: 0 0 15px rgba(140, 48, 56, 0.25);
+  }
+}
+
+.animate-node-pulse {
+  animation: nodePulse 3s infinite ease-in-out;
+}
+
+/* Restrained Opportunity Status Dot Pulse (Non-neon, subtle, 2.5s loop) */
+@keyframes restrainedDotPulse {
+  0%, 100% {
+    opacity: 0.95;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(1.15);
+  }
+}
+
+.animate-status-pulse {
+  animation: restrainedDotPulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Project Demo Action Button Styles with Micro-Translation & Underline Expansion */
+.btn-demo-action {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.85rem 1.6rem;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+              background-color 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+  will-change: transform;
+}
+
+.btn-demo-action:hover {
+  transform: translate(2px, -2px);
+}

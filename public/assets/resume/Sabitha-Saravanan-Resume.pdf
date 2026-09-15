@@ -1,0 +1,107 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >> endobj
+4 0 obj << /Length 1240 >> stream
+BT
+/F2 20 Tf
+50 740 Td
+(SABITHA SARAVANAN) Tj
+0 -20 Td
+/F1 10 Tf
+(B.Tech Information Science & Engineering | Full-Stack Web Developer) Tj
+0 -14 Td
+(Email: sabithasaravanan2919@gmail.com | Phone: +91 9514345077 | Puducherry, India) Tj
+0 -14 Td
+(LinkedIn: linkedin.com/in/sabitha19 | GitHub: github.com/Sabitha-19) Tj
+
+0 -25 Td
+/F2 12 Tf
+(PROFESSIONAL SUMMARY) Tj
+0 -14 Td
+/F1 9 Tf
+(Motivated B.Tech ISE student [CGPA 7.94] at Womens Engineering College with hands-on experience) Tj
+0 -12 Td
+(in full-stack web development, Python/Flask microframeworks, C/C++ programming, and data analytics.) Tj
+
+0 -20 Td
+/F2 12 Tf
+(EDUCATION) Tj
+0 -14 Td
+/F2 10 Tf
+(B.Tech - Information Science & Engineering [2023 - 2027] - CGPA: 7.94 / 10) Tj
+0 -12 Td
+/F1 9 Tf
+(Womens Engineering College, Puducherry Technological University [PTU]) Tj
+0 -14 Td
+/F2 10 Tf
+(Higher Secondary Certificate [HSC] [2022 - 2023] - 77.6%) Tj
+0 -12 Td
+/F1 9 Tf
+(Subramania Bharathiar Govt. Girls Hr. Sec. School) Tj
+
+0 -20 Td
+/F2 12 Tf
+(TECHNICAL SKILLS) Tj
+0 -14 Td
+/F1 9 Tf
+(Languages: C, C++, Python, Java, JavaScript, PHP, SQL) Tj
+0 -12 Td
+(Frameworks & DBs: Flask, MySQL, HTML5, CSS3, Tailwind) Tj
+0 -12 Td
+(Tools: Git, GitHub, VS Code, Postman, Render, PyCharm, XAMPP) Tj
+
+0 -20 Td
+/F2 12 Tf
+(INTERNSHIP EXPERIENCE) Tj
+0 -14 Td
+/F2 10 Tf
+(eVenturers Solutions Pvt. Ltd. - Web Development Intern [June - July 2026]) Tj
+0 -12 Td
+/F1 9 Tf
+(- Worked on responsive webpage design, client-side scripting with JavaScript, and UI modularity.) Tj
+0 -14 Td
+/F2 10 Tf
+(Alfrin Technologies - Web Development Intern [June - July 2026]) Tj
+0 -12 Td
+/F1 9 Tf
+(- Intensive practical program covering core web architectures, DOM manipulation, and live projects.) Tj
+0 -14 Td
+/F2 10 Tf
+(AQUILA Innovations - PHP Full Stack & API Integration Intern [June - July 2025]) Tj
+0 -12 Td
+/F1 9 Tf
+(- Developed full-stack features using Python and Flask. Integrated APIs and database connectivity.) Tj
+
+0 -20 Td
+/F2 12 Tf
+(KEY PROJECTS) Tj
+0 -14 Td
+/F1 9 Tf
+(- Smart ATM System: Secure ATM simulation with auth, transaction history [Flask, Python, SQL]) Tj
+0 -12 Td
+(- WEC CGPA Calculator: Dynamic GPA/CGPA calculator for college students [HTML, CSS, JavaScript]) Tj
+0 -12 Td
+(- Source Code Snippet Finder: Searchable code repository on Render [Flask, Python]) Tj
+0 -12 Td
+(- Plagiarism & Similarity Detection System: Multi-tier text comparison platform [Flask, MySQL, API]) Tj
+0 -12 Td
+(- User Auth & Management REST API: Token authentication and bcrypt hashing [PHP, MySQL]) Tj
+ET
+endstream
+endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+6 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> endobj
+xref
+0 7
+0000000000 65535 f 
+0000000010 00000 n 
+0000000060 00000 n 
+0000000118 00000 n 
+0000000257 00000 n 
+0000001550 00000 n 
+0000001618 00000 n 
+trailer << /Size 7 /Root 1 0 R >>
+startxref
+1691
+%%EOF
